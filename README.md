@@ -16,6 +16,7 @@ Project is iOS 9 and Swift.
 
 ## Story board
 
+<img width="933" alt="seguetoselfstoryboard" src="https://cloud.githubusercontent.com/assets/17399619/13253344/9e882624-da09-11e5-81de-ee634bb848b8.png">
 
 ## Controller class
 
