@@ -25,9 +25,9 @@ import UIKit
 
 class ViewEditTableViewController: UITableViewController {
 
-    @IBOutlet weak var cancelButton: UIBarButtonItem!
-    @IBOutlet weak var saveButton: UIBarButtonItem!
-    @IBOutlet weak var editButton: UIBarButtonItem!
+    @IBOutlet var cancelButton: UIBarButtonItem!
+    @IBOutlet var saveButton: UIBarButtonItem!
+    @IBOutlet var editButton: UIBarButtonItem!
     
     var editMode = false
     
