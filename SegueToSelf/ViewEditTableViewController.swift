@@ -1,18 +1,11 @@
-//
-//  ViewEditTableViewController.swift
-//  SegueToSelf
-//
-//  Created by Claude Montpetit on 16-01-10.
-//  Copyright © 2016 Claude Montpetit. All rights reserved.
-//
 
 import UIKit
 
 class ViewEditTableViewController: UITableViewController {
 
-    @IBOutlet weak var cancelButton: UIBarButtonItem!
-    @IBOutlet weak var saveButton: UIBarButtonItem!
-    @IBOutlet weak var editButton: UIBarButtonItem!
+    @IBOutlet var cancelButton: UIBarButtonItem!
+    @IBOutlet var saveButton: UIBarButtonItem!
+    @IBOutlet var editButton: UIBarButtonItem!
     
     var editMode = false
     
@@ -20,6 +13,8 @@ class ViewEditTableViewController: UITableViewController {
         
         super.viewDidLoad()
         
+        // The view contains all potential buttons,
+        // and according to the mode, we only show the appropriate ones
         if (editMode) {
             self.navigationItem.leftBarButtonItems = [cancelButton]
             self.navigationItem.rightBarButtonItems = [saveButton]
@@ -38,6 +33,9 @@ class ViewEditTableViewController: UITableViewController {
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        
+        // Set the edit mode. The segue only occurs when using the "Edit" button.
+        // Saving/cancelling is done using an action.
         if let controller1 = segue.destinationViewController as? UINavigationController {
             if let controller = controller1.topViewController as? ViewEditTableViewController {
                 controller.editMode = true
