@@ -14,6 +14,9 @@ It uses Storyboards to establish the controllers, and defines 1 controller class
 
 Project is iOS 9 and Swift.
 
+## Story board
+
+
 ## Controller class
 
 ```swift
