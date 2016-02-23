@@ -1,6 +1,6 @@
 # SegueToSelf
 
-This project shows one way to create a controller that has a segue to self. There are 2 views which appear as follow:
+This project shows one way to create a controller that has a segue to self. In thi example, the segue to self allows the controller to switch between Read Only (view) and Read Write (editor). There are 2 views which appear as follow:
 
 ```
        (Back)                (save/cancel)
